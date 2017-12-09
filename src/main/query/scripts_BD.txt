@@ -1,0 +1,37 @@
+CREATE TABLE candle_analysis (
+ candle_analysis_id integer PRIMARY KEY,
+ current_price real NOT NULL,
+ moving_average_price real NOT NULL,
+ moving_average_times integer NOT NULL,
+ exponential_moving_average_price real NOT NULL,
+ exponential_moving_average_times integer NOT NULL,
+ time_frame text NOT NULL,
+ hour integer NOT NULL,
+ high_trend integer NOT NULL
+);
+
+/*
+The type of the order: LIMIT, MARKET, STOP, TRAILING STOP, EXCHANGE MARKET, EXCHANGE LIMIT, 
+EXCHANGE STOP, EXCHANGE TRAILING STOP, FOK, EXCHANGE FOK.
+*/
+
+CREATE TABLE order_executed (
+ order_executed_id integer PRIMARY KEY,
+ symbol text NOT NULL,
+ amount real NOT NULL,
+ current_price real NOT NULL,
+ flg_compra_venda integer NOT NULL,
+ order_type text NOT NULL,
+ hour integer NOT NULL
+);
+
+CREATE TABLE trade_result (
+ trade_result_id integer PRIMARY KEY,
+ buy_price real NOT NULL,
+ buy_date integer NOT NULL,
+ sell_price real NOT NULL,	
+ sell_date integer NOT NULL,
+ period_between_dates integer NOT NULL,
+ percentage_between_orders real NOT NULL,
+ balance real NOT NULL
+);

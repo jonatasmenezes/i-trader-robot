@@ -1,0 +1,29 @@
+Ultima checagem, analise de dados:
+
+- Hora
+- Valor no momento
+- Media movel (MA20)
+- Media exponencial (EMA9)
+- Tipo prazo do candle - Time Frame graphic (1h, 15min)
+- Compra ou venda ?
+
+Ordem:
+
+- Simbolo 
+- Quantidade
+- Valor base (no momento)
+- Hora
+- Compra ou venda ?
+- Tipo (Market, Limit)
+- Exchange ou Marging
+
+Resultado:
+
+- Simbolo
+- Valor Compra
+- Valor Venda
+- Data Compra
+- Data Venda
+- Diferença entre datas
+- Percentual (-/+)
+- Saldo USD
